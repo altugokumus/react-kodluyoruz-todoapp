@@ -19,7 +19,7 @@ function List(props) {
         <section className="main">
 		<input className="toggle-all" type="checkbox" />
 		<ul className="todo-list">
-			<li className={isDone ? "completed" : ""}> 
+			<li style={{textDecoration: isDone ? "line-through" : "none"}}> 
 				<div className="view">
 					<input onClick={handleCheck} className="toggle" type="checkbox" />
 					<label>{props.note}</label>
